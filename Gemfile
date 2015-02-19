@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby "2.1.1"
+
 
 gem 'rails', '4.1.1'
 gem 'pg'
@@ -17,4 +17,5 @@ group :development, :test do
   gem 'rspec-collection_matchers', '~> 1.0.0'
   gem "capybara", "2.3.0"
   gem "faker"
+  gem 'pry'
 end

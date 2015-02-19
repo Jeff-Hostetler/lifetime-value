@@ -1,0 +1,16 @@
+<h2>Current Subscribers</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @current_subscribers.each do |user| %>
+    <tr>
+      <td><%= user.name %></td>
+
+    </tr>
+  <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,17 @@
+<h2>All Subscription Events</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Lifetime value</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.name %></td>
+      <td>$<%= lifetime_value(user)/100 %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
